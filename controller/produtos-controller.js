@@ -18,7 +18,7 @@ const productosController = {
 
     // Método para obtener los últimos productos lanzados
     getLatestProductos(req, res) {
-        const comando = 'SELECT * FROM ultimos_lanzamientos ORDER BY id DESC LIMIT 3';
+        const comando = 'SELECT * FROM productos ORDER BY id DESC LIMIT 3';
 
         // Realiza una consulta para obtener los últimos productos lanzados
         conexion.query(comando, (err, resultados, campos) => {
